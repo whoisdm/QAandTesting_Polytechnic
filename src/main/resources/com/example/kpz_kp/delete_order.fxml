@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="355.0" prefWidth="600.0" style="-fx-background-color: #1B9AAA;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kpz_kp.view.DeleteOrder">
+   <children>
+      <AnchorPane layoutY="90.0" prefHeight="270.0" prefWidth="600.0" style="-fx-background-color: #F5F1E3;">
+         <children>
+            <Button fx:id="button" layoutX="195.0" layoutY="186.0" mnemonicParsing="false" onAction="#delete_order" prefHeight="50.0" prefWidth="210.0" style="-fx-background-radius: 30; -fx-border-radius: 30; -fx-border-width: 3; -fx-border-color: #3B302B; -fx-background-color: #F8DDC9;" text="Скасувати" textFill="#463a35">
+               <font>
+                  <Font name="Impact" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="resultLabel" alignment="CENTER" layoutX="135.0" layoutY="123.0" prefHeight="51.0" prefWidth="330.0" text="Помилка" textAlignment="CENTER" textFill="#463a35" visible="false" wrapText="true">
+               <font>
+                  <Font name="Impact" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="id" layoutX="200.0" layoutY="73.0" prefHeight="50.0" prefWidth="200.0" promptText="Номер замовленя" style="-fx-border-radius: 30; -fx-border-color: #3B302B; -fx-background-radius: 30; -fx-border-width: 3; -fx-background-color: #FDF4ED;">
+               <font>
+                  <Font name="Impact" size="18.0" />
+               </font>
+            </TextField>
+            <Label alignment="CENTER" layoutX="150.0" layoutY="22.0" prefHeight="51.0" prefWidth="300.0" text="Введіть номер замолення" textAlignment="CENTER" textFill="#463a35" wrapText="true">
+               <font>
+                  <Font name="Impact" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="80.0" layoutY="25.0" text="Скасування замовлення" textAlignment="CENTER" textFill="#e9e1c3">
+         <font>
+            <Font name="Lato Regular" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
