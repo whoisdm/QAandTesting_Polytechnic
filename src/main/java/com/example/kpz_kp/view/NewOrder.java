@@ -47,7 +47,7 @@ public class NewOrder implements Initializable {
 
     @FXML
     void calculate(ActionEvent event) {
-        if (service_choice.getValue() != null && size.getText().matches("\\d+")){
+        if (service_choice.getValue() != null && size.getText().matches("\\d+") && Integer.parseInt(size.getText()) > 0){
             double price_res = register.getPrice(service_choice.getValue() , Integer.parseInt(size.getText()));
             price.setText("Вартість замовлення: " + price_res + " грн.");
             enterButton.setDisable(false);
